@@ -1,3 +1,9 @@
+---
+name: gerador-requisitos-aws-flask
+description: Analisa ideias de programas e gera requisitos funcionais e arquiteturais restritos ao ecossistema AWS (S3, Glue, Athena, Step Functions), Python, Flask e VS Code, sem uso de Lambda.
+version: 1.0.0
+---
+
 # SKILL: Geração de Requisitos para Aplicações de Dados e Web (AWS + Python + Flask)
 
 ## 1. Objetivo
@@ -21,7 +27,7 @@ Quando o usuário fornecer uma ideia de programa, o agente seguirá esta ordem m
 3. **Mapeamento de Processamento:** Definir se o processamento será via Script Python local, Glue Job ou orquestrado por Step Functions.
 4. **Mapeamento de Consulta/Apresentação:** Definir como o Athena vai consultar os dados processados e como o Flask vai exibi-los na interface HTML.
 
-## 4. Formato de Saída Obrigatório
+## 4. Formato de Saído Obrigatório
 A resposta para qualquer ideia enviada deve seguir rigorosamente a seguinte estrutura:
 
 ### 1. Visão Geral da Solução
@@ -29,8 +35,8 @@ A resposta para qualquer ideia enviada deve seguir rigorosamente a seguinte estr
 
 ### 2. Requisitos Funcionais (RF)
 *Listar os comportamentos que o sistema deve apresentar:*
-- **RF01:** [Ex: O sistema deve permitir o upload de arquivos CSV/Parquet para um bucket do S3.]
-- **RF02:** [Ex: O Flask deve renderizar uma tela inicial com o histórico de execuções.]
+- **RF01:** [Ex: O sistema deve permitir a leitura de arquivos CSV/Parquet armazenados em um bucket do S3.]
+- **RF02:** [Ex: O Flask deve renderizar uma tela inicial com os resultados da consulta.]
 - **RF03:** ...
 
 ### 3. Requisitos Não Funcionais (RNF) e Restrições
